@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>기본박스</title>
+  <link rel="stylesheet" href="css/common.css" />
+  <style>
+    /* flex: 유연하다. 가변적인 레이아웃을 구현할때 많이 사용하는 속성 */
+    /*
+        부모: 플렉스 컨테이너
+        자식: 플렉스 아이템
+      */
+    .container {
+      display: flex;
+    }
+
+    /* 태그1,클래스10,아이디100 */
+    #opt1.container {
+      /* 110 */
+      flex-direction: row;
+    }
+
+    #opt1 {
+      /* 100 */
+      flex-direction: column;
+    }
+
+    html body div#opt1.container {
+      /* 112 */
+      flex-direction: row;
+    }
+
+    #opt2 {
+      flex-direction: row-reverse;
+    }
+
+    #opt3 {
+      flex-direction: column;
+    }
+
+    #opt4 {
+      flex-direction: column-reverse;
+    }
+  </style>
+  <style>
+    div.container#opt1 {
+      flex-direction: column;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container" id="opt1">
+    <div class="box">
+      <p>1</p>
+    </div>
+    <div class="box">
+      <p>2</p>
+    </div>
+    <div class="box">
+      <p>3</p>
+    </div>
+  </div>
+  <div class="container" id="opt2">
+    <div class="box">
+      <p>1</p>
+    </div>
+    <div class="box">
+      <p>2</p>
+    </div>
+    <div class="box">
+      <p>3</p>
+    </div>
+  </div>
+  <div class="container" id="opt3">
+    <div class="box">
+      <p>1</p>
+    </div>
+    <div class="box">
+      <p>2</p>
+    </div>
+    <div class="box">
+      <p>3</p>
+    </div>
+  </div>
+  <div class="container" id="opt4">
+    <div class="box">
+      <p>1</p>
+    </div>
+    <div class="box">
+      <p>2</p>
+    </div>
+    <div class="box">
+      <p>3</p>
+    </div>
+  </div>
+</body>
+
+</html>
