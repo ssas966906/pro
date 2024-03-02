@@ -5,52 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="reset.css">
-  <style>
-    *{
-      margin: 0;
-      padding: 0;
-    }
-    .wrap{
-      width: 1880px;
-    }
-    div{
-      width: 1280px;
-      border: 1px solid;
-      padding: 10px;
-    }
-    .header{
-      width: 768px;
-    }
-    .df{
-      display: flex;
-    }
-    .topinside{
-      margin: 10px;
-    }
-    .df .top button{
-      margin: 5px;
-    }
-    main{
-      width: 768px;
-    }
-    div.df.home{
-      display: flex;
-      width: 1024px;
-      padding: 44px;
-    }
-    div.item{
-      width: 768px;
-      padding: 40px;
-    }
-  </style>
+  <link rel="stylesheet" href="main.css">
+  <script src="time.js"></script>
 </head>
 <body>
   <div class="wrap">
     <header>
       <div class="df">
       <div class="df logo">
-        <img src="" alt="">
-        <p></p>
+        <img src="./image/Icon (7).png" alt="">
+        <h1 class="">Nexcent</h1>
       </div>
       <div class="gnb">
         <ul class="df top">
@@ -59,6 +23,7 @@
         <li class="topinside">Feature</li>
         <li class="topinside">Product</li>
         <li class="topinside">Testimonial</li>
+        <li class="topinside">FAQ</li>
         </ul>
       </div>
       <div class="df top button">
@@ -75,24 +40,64 @@
             <p>from 8 years</p>
             <p>Where to grow your business as a photographer: site or social media?</p>
             <button class="Register"></button>
+            </div>
+            <div class="item">
+              <img src="./image/Illustration.png" alt="">
+            </div>
           </div>
-          <div class="item">
-            <img src="" alt="">
+      <div class="container two">
+        <div class="text top">
+          <h1 class="text">Our Clients</h1>
+          <p class="text">We have been working with some Fortune 500+ clients</p>
+        </div>
+        <div class="container two logos">
+          <img src="./image/Logo.png" alt="">
+          <img src="./image/Logo (1).png" alt="">
+          <img src="./image/Logo (2).png" alt="">
+          <img src="./image/Logo (3).png" alt="">
+          <img src="./image/Logo (4).png" alt="">
+          <img src="./image/Logo (5).png" alt="">
+          <img src="./image/Logo (6).png" alt="">
+        </div>
+      </div>
+      <div class="community">
+        <div class="community box">
+          <p class="cimmunity header">Manage your entire community in a single system</p>
+          <p class="cimmunity text">Who is Nextcent suitable for?</p>
+        </div>
+        <div class="frame-4">
+          <div class="box">
+            <img src="./image/Icon.png" alt="">
+            <p class="frame header">Membership Organisations</p>
+            <p class="frame text">Our membership management software provides full automation of membership renewals and payments</p>
+          </div>
+          <div class="box">
+            <img src="./image/Icon (1).png" alt="">
+            <p class="frame header">National Associations</p>
+            <p class="frame text">Our membership management software provides full automation of membership renewals and payments</p>
+          </div>
+          <div class="box">
+            <img src="./image/Icon (2).png" alt="">
+            <p class="frame header">Clubs And Groups</p>
+            <p class="frame text">Our membership management software provides full automation of membership renewals and payments</p>
+          </div>
+        </div>
+        <div class="community the">
+          <div class="df">
+            <div class="app image">
+              <img src="./image/Frame 35.png" alt="">
+            </div>
+            <div class="app text">
+              <h1 class=""></h1>
+            </div>
           </div>
         </div>
       </div>
-      <div class="home">
-        <div>
-          <div>
-            <h1>Our Clients</h1>
-            <p>We have been working with some Fortune 500+ clients</p>
-          </div>
-        </div>
-      </div>
-      <div class="item"></div>
     </main>
+    <div class="the middle"></div>
     <footer>
       <div class="item"></div>
+      <div id="display">현재시간은 <span id="time"></span>입니다</div>
     </footer>
   </div>
 </body>
