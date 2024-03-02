@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+       .container {
+      display: flex;
+    }
+
+    /* 태그1,클래스10,아이디100 */
+    #opt1.container {
+      /* 110 */
+      flex-direction: row;
+    }
+
+    #opt1 {
+      /* 100 */
+      flex-direction: column;
+    }
+    html body div#opt1.container {
+      /* 112 */
+      flex-direction: row;
+    }
+
+    #opt2 {
+      flex-direction: row-reverse;
+    }
+  </style>
+
+
+</head>
+<body>
+    <div class="container" id="opt1">
+      <div class="box">
+        <p>1</p>
+      </div>
+      <div class="box">
+        <p>2</p>
+      </div>
+      <div class="box">
+        <p>3</p>
+      </div>
+    </div>
+    <div class="container" id="opt2">
+      <div class="box">
+        <p>1</p>
+      </div>
+      <div class="box">
+        <p>2</p>
+      </div>
+      <div class="box">
+        <p>3</p>
+      </div>
+    </div>
+    <div class="container" id="opt3">
+      <div class="box">
+        <p>1</p>
+      </div>
+      <div class="box">
+        <p>2</p>
+      </div>
+      <div class="box">
+        <p>3</p>
+      </div>
+    </div>
+    <div class="container" id="opt4">
+      <div class="box">
+        <p>1</p>
+      </div>
+      <div class="box">
+        <p>2</p>
+      </div>
+      <div class="box">
+        <p>3</p>
+      </div>
+    </div>
+</body>
+</html>
